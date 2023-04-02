@@ -5,6 +5,7 @@ export default function Home() {
   const submit = (e: any) => {
     e.preventDefault();
     const axiosconn = axios.create({
+      // baseURL: "http://localhost:8100/",
       baseURL: "https://testbackend-riku-hatano.vercel.app:8100/",
     })
     axiosconn.post("server.js", "dummy string").then (
