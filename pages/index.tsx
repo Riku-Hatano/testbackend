@@ -2,7 +2,7 @@ import Head from 'next/head'
 import axios from "axios";
 
 export default function Home() {
-  const submit = (e: any) => {
+  const submit = (e: React.SyntheticEvent<HTMLFormElement>) :void => {
     e.preventDefault();
     const axiosconn = axios.create({
       // baseURL: "http://localhost:8100/",
