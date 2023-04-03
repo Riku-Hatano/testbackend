@@ -1,6 +1,6 @@
 {
     "type": "commonjs",
     "scripts": {
-        "riku": "nodemon server/server.js"
+        "start": "nodemon server.js"
     }
 }
